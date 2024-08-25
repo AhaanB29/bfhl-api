@@ -21,9 +21,9 @@ app.post('/api/bfhl', (req, res) => {
 
   const response = {
     is_success: true,
-    user_id: "john_doe_17091999",
-    email: "john@xyz.com",
-    roll_number: "ABCD123",
+    user_id: "AhaanB29",
+    email: "ahaan.banerjee2021@vitstudent.ac.in",
+    roll_number: "21BAI1747",
     numbers: numbers,
     alphabets: alphabets,
     highest_alphabet: [highestAlphabet]
