@@ -1,8 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
 
+app.use(cors());
 app.use(bodyParser.json());
 
 // POST endpoint
@@ -37,4 +39,10 @@ app.get('/api/bfhl', (req, res) => {
   res.json({ operation_code: 1 });
 });
 
+// Root endpoint for testing
+app.get('/', (req, res) => {
+  res.send('Backend is running');
+});
+
+// Export the Express app
 module.exports = app;
